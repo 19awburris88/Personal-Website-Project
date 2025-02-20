@@ -1,7 +1,14 @@
 body {
-    background-color: #white;
+    background-color:white;
     margin-top: 0px;
- }
+}
+
+ .index {
+   background-color: black;
+   margin-top: 8px;
+
+}
+
  head {
    margin-bottom: 0px;
  }
@@ -21,12 +28,15 @@ body {
 }
 footer {
    text-align: center; 
-   color: black; 
+   color: whitesmoke; 
+   background-color: black;
 }
  p {
    text-align: left; 
    color: black; 
    font-weight: bold;
+   margin-left: 25px;
+   margin-right: 25px;
 }
  li {
     text-decoration:solid;
@@ -35,13 +45,7 @@ footer {
     color: black; 
     display: inline;
  }
- nav {
-   text-decoration:solid;
-   font-weight:bold;
-   text-align: left; 
-   color: red\; 
-   
-}
+ 
 ul {
    list-style-type: none;
    padding: 0;
@@ -73,4 +77,98 @@ ol {
 }
 .caption {
    text-align: center;
+}
+
+.navbar {
+   background-color: olive;
+   justify-content: space-around;
+   padding: 10px 0;
+   width: auto;
+   box-sizing: border-box;
+}
+.navbar a {
+   color: white;
+   text-decoration: none;
+   padding: 14px 20px;
+   font-size: 18px;
+   border-right: 1px solid #bbb;
+}
+.navbar a:hover {
+   background-color: #575757;
+   border-radius: 5px;
+}
+.work {
+   text-align: left;
+   margin-left: 25px;
+   margin-right: 25px;
+   font-size: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.job {
+   text-align: center;
+   color: blue;
+   font-style: italic;
+}
+
+.response {
+   text-align: center;
+}
+
+.abouthead {
+   text-align: left;
+   margin-left: 25px;
+   margin-right: 25px;
+   color: darkgreen;
+   text-decoration: underline;
+}
+.video-container {
+   display: flex;
+   justify-content: center; /* Increase videog */
+   align-items: center;
+}
+
+button {
+   text-align: center;
+   background-color: black;
+   color: white;
+   display: block; /* to center button */
+   margin: 0 auto; /* to center button */
+   padding: 15px 30px; /* Increase padding */
+   font-size: 18px; /* Increase text size */
+}
+
+.desc {
+   color: tan;
+   text-align: center;
+}
+
+form {
+background-color: rgba(248, 231, 209, 0.91);
+color: black;
+font-weight: bolder;
+margin-left: 55px;
+margin-right: 55px;
+padding-top: 10px;
+padding-left: 10px;
+}
+
+.formbutton {
+   text-align: center;
+   background-color: brown;
+   color: white;
+   display: block; /* to center button */
+   margin: 0 auto; /* to center button */
+   padding-left: 8px; /* Increase padding */
+   padding-right: 8px; /* Increase padding */
+   padding-top: 6px;
+   padding-bottom: 6px;
+   font-size: 14px; /* Increase text size */
+   border: white;
+}
+
+.my-image {
+   width: 575px;
+   height: auto;
+   border-radius: 10px;
+   border: 2px solid #333;
 }
