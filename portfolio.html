@@ -3,74 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio - Austin Burris</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
-  
-    </div>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            padding: 20px;
+        }
+        .text-container {
+            max-width: 800px;
+            text-align: left;
+            padding: 20px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .video-frame {
+            border: 15px solid #8B5A2B; /* Wooden brown color */
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #deb887;
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-
     <div class="navbar">
+        <img src="assets/logo.png" alt="Logo">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="portfolio.html">Porfolio</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="buy.html">Shop</a>
         <a href="contact.html">Contact</a>
     </div>
 
- <!-- This section as intdocution to EatHeree  -->
-   
-    <a href="https://eathere.co"><h3 class="portfolio">EatHere</h3></a>
-    <h4 class="job">Wordpress / React</h4>
-    <p class="work">EatHere is a one-stop, social engagement marketplace designed for anyone to discover and purchase from F&B brands.It gathers content from social networks, news publications and blogs. Then the site displays stories, articles, blog posts, videos and other pieces of content in a discoverable format. Users can save & organize links to content that is aggregated from online and social media. The company allows users to discover the latest food trends, shop directly, upload their own dining suggestions, share with their friends and earn rewards, enabling a platform for micro, small and medium F&B businesses.</p>
-     <br>
-     <div class="video-container">
-        <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/GXRLmpdNQMs?autoplay=1&mute=1" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
+    <div class="content">
+        <div class="text-container">
+            <a href="https://eathere.co"><h3 class="portfolio">EatHere</h3></a>
+            <h4 class="job">WordPress / React</h4>
+            <p>EatHere is a one-stop, social engagement marketplace designed for anyone to discover and purchase from F&B brands. It gathers content from social networks, news publications, and blogs, displaying stories, videos, and user-generated recommendations in a streamlined format. Users can engage with food trends, shop directly, share dining experiences, and earn rewards.</p>
+        </div>
 
-        
+        <div class="video-container">
+            <div class="video-frame">
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/GXRLmpdNQMs?autoplay=1&mute=1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/eatscreen.png" class="my-image" alt="EatHere Screenshot">
+        </div>
+
+        <div class="text-container">
+            <a href="https://www.moresmoke.co"><h3 class="portfolio">More Smoke</h3></a>
+            <h4 class="job">In-Early Development</h4>
+            <p>The More Smoke app is designed to be the ultimate digital hub for cigar enthusiasts, offering a seamless experience for discovering premium cigars, engaging with the community, and managing personal collections. Users can explore a curated selection, read expert reviews, and track personal tasting notes in a sleek, user-friendly interface.</p>
+        </div>
+
+        <button onclick="document.location='default.asp'">Buy a Cigar</button>
+
+        <div class="video-container">
+            <div class="video-frame">
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/KBgNkm0ev2s?autoplay=1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
 
-    <img src="assets/eatscreen.png" class="my-image" alt="Wikiepedia image">
+    <footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
 
-     <!-- This section as intdocution to More Smoke  -->
-
-    <br>
-    <a href="https://eathere.co"><h3 class="portfolio">More Smoke</h3></a>
-    <h4 class="job">In-Early Development</h4>
-    <p class="work">The More Smoke app is designed to be the ultimate digital hub for cigar enthusiasts, providing a seamless experience for discovering premium cigars, engaging with the cigar community, and managing personal cigar collections. Whether you're a seasoned aficionado or a newcomer to the lifestyle, the app offers a curated space to explore a wide selection of cigars, read expert reviews, and track personal tasting notes. With a sleek and user-friendly interface, More Smoke simplifies the cigar experience, ensuring users can easily access detailed information on blends, origins, and pairings, helping them make informed choices for every occasion.</p>
-
-    <button onclick="document.location='default.asp'">Buy a Cigar</button>
-    <br>
-    <br>
-<br>
-<div class="video-container">
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/KBgNkm0ev2s?autoplay=1" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen>
-    </iframe>
-</div>
-
-    
-
-<script src="javascript.js"></script>
-<br>
-<br>
+    <script src="javascript.js"></script>
 </body>
-<br>
-<br>
-<br>
-<footer>Copyright notice (e.g., © 2025 Austin Burris. All rights reserved.).</footer>
 </html>

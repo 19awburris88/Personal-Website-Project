@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Austin Burris</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <style>
+    body {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .navbar {
+      display: grid;
+      grid-template-columns: auto repeat(6, 1fr);
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+    }
+    .navbar img {
+      max-height: 50px;
+      margin-right: 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+      padding: 20px;
+    }
+    .text-container {
+      max-width: 800px;
+      text-align: left;
+      padding: 20px;
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .video-frame {
+      border: 15px solid #8B5A2B; /* Wooden brown color */
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #deb887;
+      display: inline-block;
+    }
+    img {
+      max-width: 35%;
+      height: 120%;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .blog-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .blog-post {
+      margin-bottom: 50px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    .blog-post h2 {
+      color: #333;
+    }
+    .blog-post h3 {
+      color: #555;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src="assets/logo.png" alt="Logo">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="buy.html">Shop</a>
+    <a href="buy.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="blog-container">
+    <!-- Post 1 -->
+    <article class="blog-post">
+      <h2>The Future of Full Stack Development: Emerging Trends and Technologies</h2>
+      
+      <h3>Introduction</h3>
+      <p>In today’s rapidly evolving tech landscape, full stack development isn’t just about writing code—it’s about anticipating change, integrating innovative tools, and architecting solutions that scale. In this post, we explore the trends and technologies that are reshaping the field, from microservices architectures to AI-driven development.</p>
+      
+      <h3>The Evolution of the Stack</h3>
+      <p>Modern applications require agility. Traditional monolithic architectures are giving way to microservices, where independent, containerized services communicate seamlessly via APIs. Technologies like Docker and Kubernetes have revolutionized deployment, making it easier than ever to scale applications dynamically. Additionally, serverless computing is gaining traction, reducing infrastructure overhead while allowing developers to focus solely on business logic.</p>
+      
+      <h3>Integrating DevOps and Automation</h3>
+      <p>The rise of DevOps has blurred the lines between development and operations. Continuous integration/continuous deployment (CI/CD) pipelines, automated testing suites, and infrastructure as code (IaC) have become essential. This synergy not only accelerates delivery cycles but also improves reliability and security—a non-negotiable in today’s environment.</p>
+      
+      <h3>Security and Future-Proofing</h3>
+      <p>As applications become more complex, security can’t be an afterthought. Modern full stack developers are incorporating security measures at every level, from secure coding practices to automated vulnerability scans and compliance checks. Furthermore, with the integration of AI and machine learning, predictive analytics are now used to preempt potential threats before they become critical issues.</p>
+      
+      <h3>Conclusion</h3>
+      <p>Staying ahead in full stack development requires a commitment to lifelong learning and an agile mindset. Whether you’re refining your microservices architecture or implementing cutting-edge CI/CD practices, embracing these trends today will prepare you for the challenges of tomorrow. Engage with the community, experiment with emerging tools, and remember—innovation is a journey, not a destination.</p>
+    </article>
+    
+    <!-- Post 2 -->
+    <article class="blog-post">
+      <h2>Mastering the Art of Bourbon: A Comprehensive Guide to Tasting, Distillation, and Pairing</h2>
+      
+      <h3>Introduction</h3>
+      <p>Bourbon is more than just a spirit—it’s a journey steeped in tradition, craft, and innovation. In this deep dive, we explore the nuances of bourbon, from its distillation process to expert tasting techniques and perfect pairings that elevate every experience.</p>
+      
+      <h3>The Craft of Distillation</h3>
+      <p>At its core, bourbon is defined by a meticulous process. Starting with a carefully crafted mash bill, distillers select a blend of corn, rye, barley, and sometimes wheat to create a unique flavor profile. The fermentation process transforms these ingredients into alcohol, which is then distilled and aged in charred oak barrels. This aging process not only imparts rich, complex flavors but also creates that signature amber hue.</p>
+      
+      <h3>Tasting Like a Connoisseur</h3>
+      <p>Expert tasting involves more than a casual sip. Start by observing the bourbon’s color and viscosity; these visual cues hint at the depth of its aging process. Next, the aroma—often layered with notes of caramel, vanilla, and spice—provides the first indication of flavor complexity. Finally, take a measured sip to appreciate the balance between sweetness, bitterness, and the oaky finish. Remember, each bourbon has its own story, waiting to be discovered through mindful tasting.</p>
+      
+      <h3>Pairing Bourbon with Culinary Delights</h3>
+      <p>Pairing bourbon with food can elevate both the drink and the meal. Rich, smoky barbecues, dark chocolate desserts, or even a well-prepared steak can complement bourbon’s robust flavor profile. For cigar aficionados, a well-matched cigar can also enhance the tasting experience. <em>(Affiliate Disclaimer: In future updates, I may include curated affiliate links for recommended bourbons and pairings to help you start your journey.)</em></p>
+      
+      <h3>Conclusion</h3>
+      <p>Mastering bourbon is an art that combines history, science, and personal taste. Whether you’re a seasoned enthusiast or a curious newcomer, understanding the intricacies of distillation, tasting, and pairing can transform your experience. Embrace the craft, experiment with different profiles, and enjoy the journey—cheers to that perfect pour!</p>
+    </article>
+    
+    <!-- Post 3 -->
+    <article class="blog-post">
+      <h2>The Craft of Cigars: From Tobacco Field to Cigar Lounge</h2>
+      
+      <h3>Introduction</h3>
+      <p>Cigars have long been synonymous with sophistication, celebration, and craftsmanship. In this post, we delve into the world of cigars—from the cultivation of tobacco to the nuanced art of cigar rolling—exploring what makes a truly exceptional smoke.</p>
+      
+      <h3>The Journey Begins in the Field</h3>
+      <p>Every great cigar starts with high-quality tobacco. Cultivated in rich, fertile soil, tobacco leaves are carefully harvested and cured to preserve their flavor and aroma. The process of curing, fermenting, and aging tobacco is critical: it transforms raw leaves into the complex, aromatic base that defines premium cigars. Understanding these early steps is essential for appreciating the craftsmanship that follows.</p>
+      
+      <h3>The Art and Science of Cigar Rolling</h3>
+      <p>Once the tobacco is cured, it moves to the hands of master rollers—artisans who blend tradition with precision. Hand-rolled cigars require years of training and an intuitive understanding of tobacco behavior. The process involves selecting, blending, and rolling the leaves into a uniform product, ensuring that every cigar provides a consistent, rich experience.</p>
+      
+      <h3>Expert Tips for the Aficionado</h3>
+      <p>Choosing the right cigar can be as personal as selecting a fine bourbon. Consider factors such as the strength, flavor notes, and even the shape of the cigar. Storage is equally important; maintaining optimal humidity levels preserves the cigar’s integrity and enhances its flavor over time. Pairing your cigar with a complementary bourbon or coffee can further elevate your experience, highlighting the intricate interplay between flavors.</p>
+      
+      <h3>Conclusion</h3>
+      <p>Cigars represent a fusion of art, tradition, and expertise. Whether you’re new to the world of cigars or a seasoned aficionado, understanding the journey from tobacco field to cigar lounge enriches your appreciation for the craft. Embrace the process, savor each detail, and join the community of those who celebrate the timeless tradition of cigar craftsmanship.</p>
+    </article>
+    
+    <!-- Post 4 -->
+    <article class="blog-post">
+      <h2>Integrating Full Stack Development with Affiliate Marketing: Strategies to Monetize Your Tech Blog</h2>
+      
+      <h3>Introduction</h3>
+      <p>Monetizing a tech blog doesn’t have to be a daunting task. As a full stack developer, you have a unique advantage: the ability to integrate seamless affiliate marketing strategies directly into your site’s architecture. In this post, we share advanced techniques to balance expert content with effective revenue generation.</p>
+      
+      <h3>Building a Robust Foundation</h3>
+      <p>Before introducing affiliate links, ensure that your website is optimized for both performance and user experience. A solid foundation includes a responsive design, fast load times, and secure, scalable infrastructure. Modern frameworks and CMS platforms—combined with custom development—allow you to create a seamless experience that keeps visitors engaged and encourages them to explore your affiliate offerings.</p>
+      
+      <h3>Strategic Placement of Affiliate Links</h3>
+      <p>Affiliate links should enhance your content without disrupting the reader’s journey. Here are some expert strategies:</p>
+      <ul>
+        <li><strong>Contextual Integration:</strong> Embed links naturally within in-depth articles where they add value, such as linking to tools, software, or books that you personally recommend.</li>
+        <li><strong>Resource Pages:</strong> Create dedicated pages that curate high-quality products and services related to full stack development.</li>
+        <li><strong>Call-to-Actions:</strong> Use clear and compelling CTAs at the end of posts, guiding readers toward additional resources or special offers.</li>
+      </ul>
+      
+      <h3>Optimizing for SEO and Conversion</h3>
+      <p>High-quality content is only half the battle. To maximize your affiliate revenue, focus on SEO best practices:</p>
+      <ul>
+        <li><strong>Keyword Research:</strong> Identify and target long-tail keywords relevant to your niche.</li>
+        <li><strong>Quality Backlinks:</strong> Build relationships with other tech bloggers and industry influencers to boost your site’s authority.</li>
+        <li><strong>Analytics:</strong> Leverage tools to monitor user behavior and refine your affiliate strategies over time.</li>
+      </ul>
+      
+      <h3>Real-World Insights and Tools</h3>
+      <p>As someone with deep technical expertise, you can leverage custom scripts and third-party plugins to automate affiliate link management. Experiment with A/B testing to see which placements and designs yield the best conversion rates. Sharing case studies and personal insights not only builds trust but also encourages readers to try the recommended products.</p>
+      
+      <h3>Conclusion</h3>
+      <p>Integrating affiliate marketing into your full stack development blog is both an art and a science. With a robust technical foundation, strategic link placement, and continuous optimization, you can create a revenue stream that supports your passion for technology. Stay innovative, keep testing, and let your expertise shine through every line of code and every carefully placed link.</p>
+    </article>
+    
+    <!-- Post 5 -->
+    <article class="blog-post">
+      <h2>Balancing Dual Passions: Lessons from a Career in Full Stack Development and Bourbon &amp; Cigars</h2>
+      
+      <h3>Introduction</h3>
+      <p>In a world where specialization often rules, pursuing dual passions can seem both daunting and immensely rewarding. Drawing from my experiences in full stack development and the refined world of bourbon and cigars, I share insights on how to integrate two seemingly disparate interests into a cohesive and fulfilling career.</p>
+      
+      <h3>The Intersection of Art and Technology</h3>
+      <p>At first glance, full stack development and the art of bourbon and cigars might appear worlds apart. Yet, both fields require precision, continuous learning, and a deep appreciation for craftsmanship. Whether you’re debugging a complex application or savoring the layered flavors of a well-aged bourbon, attention to detail is paramount. Embracing these parallels can enrich your approach to both endeavors, fueling creativity and innovation.</p>
+      
+      <h3>Time Management and Creative Synergy</h3>
+      <p>Balancing dual passions demands a disciplined approach to time management. I’ve found that setting clear boundaries and scheduling dedicated periods for each interest not only prevents burnout but also fosters creative cross-pollination. For example, the problem-solving skills honed in coding can inspire innovative ways to appreciate and evaluate bourbon, while the patience required in savoring a fine cigar translates into a more thoughtful approach to debugging complex code.</p>
+      
+      <h3>Building a Personal Brand with Diverse Expertise</h3>
+      <p>Your unique blend of technical acumen and cultural sophistication sets you apart in both arenas. Leverage your dual expertise by creating content that bridges the gap—be it through blog posts, video tutorials, or social media engagements. This holistic approach not only broadens your audience but also opens doors for partnerships and affiliate opportunities in both industries.</p>
+      
+      <h3>Lessons Learned and Looking Forward</h3>
+      <p>Over the years, I’ve learned that success is not about choosing one passion over the other—it’s about embracing both and finding harmony in their coexistence. The discipline, creativity, and attention to detail required in full stack development mirror those in the craft of bourbon and cigars. This synergy has not only enriched my professional journey but has also provided endless opportunities for personal growth and fulfillment.</p>
+      
+      <h3>Conclusion</h3>
+      <p>Balancing dual passions isn’t always easy, but it’s a journey worth taking. Whether you’re a tech enthusiast with a taste for the finer things or a connoisseur eager to explore new technical frontiers, remember that every skill and passion you develop adds value to your personal brand. Embrace the challenge, celebrate the diversity of your interests, and let your unique story inspire others to do the same.</p>
+    </article>
+  </div>
+
+  <footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .product-item h3 {
+            margin: 10px 0;
+        }
+        .product-item p {
+            margin: 5px 0;
+        }
+        .product-item button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .product-item button:hover {
+            background-color: #575757;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="buy.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Example Product Item -->
+            <div class="product-item">
+                <img src="assets/caviar.webp" alt="Product 1">
+                <h3>Caviar Cowboy</h3>
+                <p>Price: $16</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/tempus.webp" alt="Product 1">
+                <h3>Tempus Fugit</h3>
+                <p>Price: $16</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/nile.webp" alt="Product 1">
+                <h3>Nile Queen</h3>
+                <p>Price: $16</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/space.webp" alt="Product 1">
+                <h3>Space Cowboy</h3>
+                <p>Price: $16</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Repeat similar blocks for more products -->
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="product-grid">
+            <!-- Example Product Item -->
+            <div class="product-item">
+                <img src="assets/caviar.webp" alt="Product 1">
+                <h3>More Smoke Tee</h3>
+                <p>Price: $40</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/tempus.webp" alt="Product 1">
+                <h3>More Smoke Crop</h3>
+                <p>Price: $35</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/nile.webp" alt="Product 1">
+                <h3>More Vintage Sweatsuit</h3>
+                <p>Price: $100</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="assets/space.webp" alt="Product 1">
+                <h3>More Smoek Crewneck</h3>
+                <p>Price: $16</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Repeat similar blocks for more products -->
+        </div>
+    </div>
+
+    <footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -3,64 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Austin Burris</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
-    </div>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            padding: 20px;
+        }
+        .text-container {
+            max-width: 800px;
+            text-align: left;
+            padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
-
-
 <body>
-
     <div class="navbar">
+        <img src="assets/logo.png" alt="Logo">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="portfolio.html">Porfolio</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="buy.html">Shop</a>
         <a href="contact.html">Contact</a>
     </div>
 
-    <!-- This section tells more About -->
-
-    <h2 class="abouthead">Building Digital Experiences with Code & Creativity</h2>
-   
-     <p>Austin Burris is the owner of More Smoke, a premium cigar lifestyle brand that celebrates the rich cultural heritage of smoking traditions. With a focus on quality craftsmanship, More Smoke delivers a curated experience for cigar enthusiasts while expanding its reach into lifestyle apparel and accessories.</p>
-    
-     <p>In addition to running More Smoke, Austin is currently a full-stack development student at Fullstack Academy. With a keen interest in AI and machine learning, he is leveraging his studies to integrate technology into the cigar industry and enhance consumer engagement.</p>
-
-    <p>passionate entrepreneur, Austin has built More Smoke into a respected name in the cigar community, blending business acumen with a deep appreciation for culture, craftsmanship, and connection. As he sharpens his skills in software development, he is preparing to bring innovative solutions to both the tech and cigar industries.</p>
-
-    <p>Before launching More Smoke, Austin Burris was the founder of EatHere, a pioneering food-tech brand that grew into a nationwide multimedia platform. Built on WordPress, EatHere connected food lovers with local restaurants, chefs, and culinary experiences through engaging digital content, social media, and strategic partnerships. Under Austin’s leadership, the platform became a go-to resource for discovering hidden gems in the food scene, leveraging technology to bridge the gap between consumers and small businesses. His experience in developing and scaling digital platforms now informs his approach to integrating tech solutions into the cigar industry, blending innovation with tradition.</p>
-
-    <br>
-
-     <img src="assets/austin.JPG" alt="Wikiepedia image">
-     <br>
-
-    <h3>Work Experience</h3>
-    <br>
-    <a href="https://www.moresmoke.co"><h3 class="job">More Smoke</h3></a>
-    <h4 class="job">(2021 - Present) </h4>
-
-    <p class="work">More Smoke is a lifestyle brand celebrating the art and culture of smoking. Initially launched as The Cultured King Experience, our brand has evolved to embrace a broader audience of smoke enthusiasts—cigar aficionados, barbecue masters, and even those in cannabis culture—while staying rooted in premium cigar craftsmanship.</p>
-
-    <p class="work">At More Smoke, we blend tradition with modern sophistication through a curated collection of premium cigars, stylish apparel, and signature lifestyle accessories. Our mission is to honor the heritage of smoking while fostering a welcoming, inclusive community that bridges diverse cultures and interests. From our "Cowboy Caviar" dual-wrapper figurado to our bold "Madam President", every product is a statement of luxury, craftsmanship, and identity.</p>
+    <div class="content">
+        <h2>Building Digital Experiences with Code & Creativity</h2>
+        <div class="text-container">
+            <p>Austin Burris is the owner of More Smoke, a premium cigar lifestyle brand that celebrates the rich cultural heritage of smoking traditions. With a focus on quality craftsmanship, More Smoke delivers a curated experience for cigar enthusiasts while expanding its reach into lifestyle apparel and accessories.</p>
+            <p>In addition to running More Smoke, Austin is currently a full-stack development student at Fullstack Academy. With a keen interest in AI and machine learning, he is leveraging his studies to integrate technology into the cigar industry and enhance consumer engagement.</p>
+            <p>Before launching More Smoke, Austin Burris was the founder of EatHere, a pioneering food-tech brand that grew into a nationwide multimedia platform. Built on WordPress, EatHere connected food lovers with local restaurants, chefs, and culinary experiences through engaging digital content, social media, and strategic partnerships.</p>
+        </div>
+        <div class="image-container">
+            <img src="assets/austin.JPG" alt="Austin Burris">
+        </div>
         
-    <p class="work">As the Founder and Owner of More Smoke, I wear multiple hats as the sole employee of the brand. My role encompasses:</p>
+        <h3>Work Experience</h3>
+        <div class="text-container">
+            <a href="https://www.moresmoke.co"><h3 class="job">More Smoke</h3></a>
+            <h4 class="job">(2021 - Present)</h4>
+            <p>More Smoke is a lifestyle brand celebrating the art and culture of smoking, blending tradition with modern sophistication through curated premium cigars, stylish apparel, and signature lifestyle accessories.</p>
+            
+            <a href="https://eathere.co"><h3 class="job">EatHere</h3></a>
+            <h4 class="job">(2014 - 2023)</h4>
+            <p>As Co-Founder of EatHere®, Austin played a pivotal role in shaping the platform into a premier social-recommendations engine for the food and beverage industry, building a community-driven digital platform.</p>
+        </div>
+    </div>
 
-    <br>
-    <a href="https://eathere.co"><h3 class="job">EatHere</h3></a>
-    <h4 class="job">(2014 - 2023)</h4>
+    <footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
 
-    <p class="work">As Co-Founder of EatHere®, I played a pivotal role in shaping the platform into a premier social-recommendations engine for the food and beverage industry. I spearheaded strategic partnerships, driving sales growth by securing collaborations with restaurants, bars, and food brands. Through targeted marketing initiatives, including social media campaigns and influencer collaborations, I helped expand our digital footprint, fostering a highly engaged online community. Additionally, I directed budgeting and financial planning, ensuring efficient resource allocation to sustain business growth while maximizing ROI.</p>
-
-    <p class="work">Beyond strategy and sales, I led team operations, managing a diverse group of creatives, developers, and content strategists to execute projects seamlessly. I also developed and maintained the EatHere website using WordPress, ensuring a visually engaging and user-friendly experience. By optimizing operational workflows, I improved efficiency in content curation, user engagement, and platform functionality, allowing for scalable growth and enhanced user experience. My hands-on approach in these areas helped strengthen EatHere’s brand identity and digital presence.</p>
-        
-    <p class="work">My leadership extended into community engagement and content strategy, where I leveraged digital storytelling and user-generated content to position EatHere as a trusted voice in the industry. By balancing creativity with data-driven decision-making, I helped refine our approach to audience growth and customer retention. This combination of sales expertise, operations management, and digital development was instrumental in EatHere’s success, reinforcing our mission to connect food lovers with the best dining experiences nationwide.</p>
-
-    <br>
-    
-
-<script src="javascript.js"></script>
+    <script src="javascript.js"></script>
 </body>
-<footer>Copyright notice (e.g., © 2025 Austin Burris. All rights reserved.).</footer>
 </html>

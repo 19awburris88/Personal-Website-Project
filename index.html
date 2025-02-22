@@ -6,46 +6,94 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <style>
+        body {
+            background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') repeat;
+            background-size
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        
+        .navbar {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            padding: 20px;
+        }
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            width: 300px;
+            text-align: left;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
-
-<body class="index">
-
+<body>
     <div class="navbar">
+        <img src="assets/logo.png" alt="Logo">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="portfolio.html">Porfolio</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="buy.html">Shop</a>
         <a href="contact.html">Contact</a>
     </div>
 
-   
-   <br>
-  
-    
-<img src="assets/logo.png" alt="">  <!-- Personal Business Logo -->
-<h4 class="desc">Fullstack Development | AI & Machined Learning | SEO | Project Managment | Finance & Budgeting | Cigars </h4>
+    <div class="content">
+        <h4 class="desc">Fullstack Development | AI & Machine Learning | SEO | Project Management | Finance & Budgeting | Cigars</h4>
+        <h2>Sign Up for Newsletter</h2>
+        <form class="form-container">
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email">
+            <label>Interest:</label>
+            <input type="radio" id="tech" name="interest" value="Tech">
+            <label for="tech">Tech</label>
+            <input type="radio" id="cigars" name="interest" value="Cigars">
+            <label for="cigars">Cigars</label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
-<h2>Sign Up for Newsletter</h2>
-<form>
-    <label for="fname">Full Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Email Address:</label><br>
-    <input type="text" id="Email" name="Email">
-    <br>
-    <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">Tech</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">Cigars</label><br>
-    <br>
-    <button class="formbutton" onclick="document.location='default.asp'">Submit</button>
-    <br>
-  </form>
+    <footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
 
-  <br>
-  <br>
-  <br><br>
-    
+    <script src="javascript.js"></script>
 
-<script src="javascriopt,js"></script>
+    <audio controls loop>
+        <source src="assets/Kendrick Lamar - Not Like Us (INSTRUMENTAL).mp3" type="audio/mpeg">
+    </audio>
+
 </body>
-<footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
 </html>
