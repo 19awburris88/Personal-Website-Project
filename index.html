@@ -37,12 +37,13 @@
     }
     .content {
       display: grid;
-      grid-template-columns: 1fr;
-      place-items: center;
+      grid-template-rows: auto;
+      gap: 40px;
       padding: 20px;
     }
     .text-container {
       max-width: 800px;
+      margin: 0 auto;
       text-align: left;
       padding: 20px;
     }
@@ -60,7 +61,9 @@
     }
     img {
       max-width: 35%;
-      height: 120%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
     }
     footer {
       background-color: #333;
@@ -68,20 +71,38 @@
       padding: 10px;
       text-align: center;
     }
+    .portfolio-projects {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 20px;
+    }
+    .portfolio-projects h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .project {
+      margin-bottom: 40px;
+    }
+    .project h3 {
+      color: #555;
+    }
     .blog-container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      text-align: left;
+    }
+    .blog-container h2 {
+      margin-bottom: 20px;
+      color: #333;
     }
     .blog-post {
       margin-bottom: 50px;
       padding-bottom: 20px;
       border-bottom: 1px solid #ccc;
-    }
-    .blog-post h2 {
-      color: #333;
     }
     .blog-post h3 {
       color: #555;
@@ -100,13 +121,64 @@
     <a href="contact.html">Contact</a>
   </div>
 
+  <div class="content">
+    <!-- Introduction Section -->
+    <div class="text-container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hello! I’m Austin Burris, a passionate developer and designer dedicated to crafting modern and engaging digital experiences. My work blends creativity with functionality to deliver projects that not only look great but also perform seamlessly. Browse through my portfolio to explore my latest projects, read my blog, and learn more about my journey.</p>
+    </div>
 
-<footer>Copyright notice © 2025 Austin Burris. All rights reserved.</footer>
+    <!-- Intro or Welcome Videon -->
+    <div class="video-container">
+      <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Project Showcase Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
-<script src="javascript.js"></script>
+    <!-- Portfolio Projects Section -->
+    <div class="portfolio-projects">
+      <h2>Featured Projects</h2>
+      
+      <div class="project">
+        <h3>Project One: Responsive Web App</h3>
+        <img src="assets/project1.png" alt="Screenshot of Project One">
+        <p>This project involved creating a fully responsive web application using HTML5, CSS3, and JavaScript. The design emphasizes user-friendly navigation and modern aesthetics.<a href="">Leard More</a></p>
+      </div>
+      
+      <div class="project">
+        <h3>Project Two: Mobile App Design</h3>
+        <img src="assets/project2.png" alt="Screenshot of Project Two">
+        <p>A mobile-first design project that combines intuitive UI/UX with powerful functionality. This project showcases my ability to adapt designs for different screen sizes while maintaining visual appeal.<a href="">Learn More</a></p>
+      </div>
+    </div>
 
-<audio controls loop>
+    <!-- Blog Section -->
+    <div class="blog-container">
+      <h2>Latest Blog Posts</h2>
+      
+      <div class="blog-post">
+        <h3>Understanding Modern Web Design</h3>
+        <p>Modern web design is evolving rapidly. In this post, I explore the principles behind minimalist design, responsive layouts, and user-centric interfaces that drive today's digital experiences. <a href="">Read More</a></p>
+      </div>
+      
+      <div class="blog-post">
+        <h3>Innovative Approaches to Problem Solving</h3>
+        <p>Every project presents unique challenges. Here, I share some of the innovative strategies and creative problem-solving techniques that have helped me overcome obstacles and deliver exceptional work.<a href="">Read More</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Copyright notice © 2025 Austin Burris. All rights reserved.
+  </footer>
+
+  <script src="javascript.js"></script>
+
+  <audio controls loop>
     <source src="assets/Kendrick Lamar - Not Like Us (INSTRUMENTAL).mp3" type="audio/mpeg">
-</audio>
+    Your browser does not support the audio element.
+  </audio>
 </body>
 </html>

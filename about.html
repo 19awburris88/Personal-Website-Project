@@ -1,100 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Austin Burris</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/logo.png">
-    <style>
-        body {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            grid-template-columns: 1fr;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .navbar {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            background-color: #333;
-            padding: 10px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            text-align: center;
-        }
-        .navbar a:hover {
-            background-color: #575757;
-        }
-        .content {
-            display: grid;
-            grid-template-columns: 1fr;
-            place-items: center;
-            padding: 20px;
-        }
-        .text-container {
-            max-width: 800px;
-            text-align: left;
-            padding: 20px;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Austin Burris</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <style>
+    body {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .navbar {
+      display: grid;
+      grid-template-columns: auto repeat(6, 1fr);
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+    }
+    .navbar img {
+      max-height: 50px;
+      margin-right: 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+      padding: 20px;
+    }
+    .text-container {
+      max-width: 800px;
+      text-align: left;
+      padding: 20px;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar">
-        <img src="assets/logo.png" alt="Logo">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="buy.html">Shop</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+  <div class="navbar">
+    <img src="assets/logo.png" alt="Logo">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="buy.html">Shop</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="content">
+    <h2>Building Digital Experiences with Code & Creativity</h2>
+    <div class="text-container">
+      <p>Austin Burris is the owner of More Smoke, a premium cigar lifestyle brand that celebrates the rich cultural heritage of smoking traditions. With a focus on quality craftsmanship, More Smoke delivers a curated experience for cigar enthusiasts while expanding its reach into lifestyle apparel and accessories.</p>
+      <p>In addition to running More Smoke, Austin is currently a full-stack development student at Fullstack Academy. With a keen interest in AI and machine learning, he is leveraging his studies to integrate technology into the cigar industry and enhance consumer engagement.</p>
+      <p>Before launching More Smoke, Austin Burris was the founder of EatHere, a pioneering food-tech brand that grew into a nationwide multimedia platform. Built on WordPress, EatHere connected food lovers with local restaurants, chefs, and culinary experiences through engaging digital content, social media, and strategic partnerships.</p>
     </div>
-
-    <div class="content">
-        <h2>Building Digital Experiences with Code & Creativity</h2>
-        <div class="text-container">
-            <p>Austin Burris is the owner of More Smoke, a premium cigar lifestyle brand that celebrates the rich cultural heritage of smoking traditions. With a focus on quality craftsmanship, More Smoke delivers a curated experience for cigar enthusiasts while expanding its reach into lifestyle apparel and accessories.</p>
-            <p>In addition to running More Smoke, Austin is currently a full-stack development student at Fullstack Academy. With a keen interest in AI and machine learning, he is leveraging his studies to integrate technology into the cigar industry and enhance consumer engagement.</p>
-            <p>Before launching More Smoke, Austin Burris was the founder of EatHere, a pioneering food-tech brand that grew into a nationwide multimedia platform. Built on WordPress, EatHere connected food lovers with local restaurants, chefs, and culinary experiences through engaging digital content, social media, and strategic partnerships.</p>
-        </div>
-        <div class="image-container">
-            <img src="assets/austin.JPG" alt="Austin Burris">
-        </div>
-        
-        <h3>Work Experience</h3>
-        <div class="text-container">
-            <a href="https://www.moresmoke.co"><h3 class="job">More Smoke</h3></a>
-            <h4 class="job">(2021 - Present)</h4>
-            <p>More Smoke is a lifestyle brand celebrating the art and culture of smoking, blending tradition with modern sophistication through curated premium cigars, stylish apparel, and signature lifestyle accessories.</p>
-            
-            <a href="https://eathere.co"><h3 class="job">EatHere</h3></a>
-            <h4 class="job">(2014 - 2023)</h4>
-            <p>As Co-Founder of EatHere®, Austin played a pivotal role in shaping the platform into a premier social-recommendations engine for the food and beverage industry, building a community-driven digital platform.</p>
-        </div>
+    <div class="image-container">
+      <img src="assets/austin.JPG" alt="Austin Burris">
     </div>
+    
+    <h3>Work Experience</h3>
+    <div class="text-container">
+      <a href="https://www.moresmoke.co"><h3 class="job">More Smoke</h3></a>
+      <h4 class="job">(2021 - Present)</h4>
+      <p>More Smoke is a lifestyle brand celebrating the art and culture of smoking, blending tradition with modern sophistication through curated premium cigars, stylish apparel, and signature lifestyle accessories.</p>
+      
+      <a href="https://eathere.co"><h3 class="job">EatHere</h3></a>
+      <h4 class="job">(2014 - 2023)</h4>
+      <p>As Co-Founder of EatHere®, Austin played a pivotal role in shaping the platform into a premier social-recommendations engine for the food and beverage industry, building a community-driven digital platform.</p>
+    </div>
+  </div>
 
-    <footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
+  <footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
 
-    <script src="javascript.js"></script>
+  <script src="javascript.js"></script>
 </body>
 </html>
