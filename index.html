@@ -1,99 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/logo.png">
-    <style>
-        body {
-            background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') repeat;
-            background-size
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            grid-template-columns: 1fr;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        
-        .navbar {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            background-color: #333;
-            padding: 10px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            text-align: center;
-        }
-        .navbar a:hover {
-            background-color: #575757;
-        .content {
-            display: grid;
-            grid-template-columns: 1fr;
-            place-items: center;
-            padding: 20px;
-        }
-        .form-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-            width: 300px;
-            text-align: left;
-        }
-        input, button {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Austin Burris</title>
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <style>
+    body {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .navbar {
+      display: grid;
+      grid-template-columns: auto repeat(6, 1fr);
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+    }
+    .navbar img {
+      max-height: 50px;
+      margin-right: 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+      padding: 20px;
+    }
+    .text-container {
+      max-width: 800px;
+      text-align: left;
+      padding: 20px;
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .video-frame {
+      border: 15px solid #8B5A2B; /* Wooden brown color */
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #deb887;
+      display: inline-block;
+    }
+    img {
+      max-width: 35%;
+      height: 120%;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .blog-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .blog-post {
+      margin-bottom: 50px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    .blog-post h2 {
+      color: #333;
+    }
+    .blog-post h3 {
+      color: #555;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar">
-        <img src="assets/logo.png" alt="Logo">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="buy.html">Shop</a>
-        <a href="contact.html">Contact</a>
-    </div>
+  <div class="navbar">
+    <img src="assets/logo.png" alt="Logo">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="buy.html">Shop</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-    <div class="content">
-        <h4 class="desc">Fullstack Development | AI & Machine Learning | SEO | Project Management | Finance & Budgeting | Cigars</h4>
-        <h2>Sign Up for Newsletter</h2>
-        <form class="form-container">
-            <label for="fname">Full Name:</label>
-            <input type="text" id="fname" name="fname">
-            <label for="email">Email Address:</label>
-            <input type="text" id="email" name="email">
-            <label>Interest:</label>
-            <input type="radio" id="tech" name="interest" value="Tech">
-            <label for="tech">Tech</label>
-            <input type="radio" id="cigars" name="interest" value="Cigars">
-            <label for="cigars">Cigars</label>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
 
-    <footer>Copyright notice (© 2025 Austin Burris. All rights reserved.).</footer>
+<footer>Copyright notice © 2025 Austin Burris. All rights reserved.</footer>
 
-    <script src="javascript.js"></script>
+<script src="javascript.js"></script>
 
-    <audio controls loop>
-        <source src="assets/Kendrick Lamar - Not Like Us (INSTRUMENTAL).mp3" type="audio/mpeg">
-    </audio>
-
+<audio controls loop>
+    <source src="assets/Kendrick Lamar - Not Like Us (INSTRUMENTAL).mp3" type="audio/mpeg">
+</audio>
 </body>
 </html>
