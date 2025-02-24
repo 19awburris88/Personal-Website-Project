@@ -1,7 +1,7 @@
 # Personal-Website-Project
 # Austin Burris Personal Website Project 
 
-The website is portfolio of Austin Burris’ work in both tech & cigars used to provide prospective customers information prior to contacting and/or doing business. 
+The website is portfolio of Austin Burris’ work in both tech & cigars used to provide prospective customers information prior to contacting and/or doing business. It features multiple pages shown below which will be filled in different capacities later. 
 
 ## Pages 
 
